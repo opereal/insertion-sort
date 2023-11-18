@@ -1,0 +1,15 @@
+ALGORITHM InsertionSort
+VAR
+    array: ARRAY_OF INTEGER[N];
+    Key: INTEGER
+    index: INTEGER
+BEGIN
+    FOR i FROM 1 TO N STEP 1  DO 
+        Key =: array[i]
+        index = i - 1
+        WHILE (index > = 0 && array[index] > key) DO
+             array[j + 1] = array[j]
+             index = index - 1 
+             array[index + 1] = key
+        END_WHILE
+END_FOR
